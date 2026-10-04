@@ -1,0 +1,89 @@
+{
+  "model": "random_forest",
+  "split": "random",
+  "seed": 42,
+  "n_estimators": 100,
+  "tuesday_flows": 445909,
+  "friday_flows": 225745,
+  "combined_binary_counts": [
+    529792,
+    141862
+  ],
+  "feature_count": 77,
+  "train_shape": [
+    226979,
+    77
+  ],
+  "test_shape": [
+    56745,
+    77
+  ],
+  "train_classes": [
+    113489,
+    113490
+  ],
+  "test_classes": [
+    28373,
+    28372
+  ],
+  "metrics": {
+    "Accuracy": 0.9998237730196493,
+    "Precision": 0.999929493055066,
+    "Recall": 0.9997180318623996,
+    "F1": 0.9998237512778032,
+    "ROC_AUC": 0.999999890061942
+  },
+  "classification_report": "              precision    recall  f1-score   support\n\n      Benign     0.9997    0.9999    0.9998     28373\n      Attack     0.9999    0.9997    0.9998     28372\n\n    accuracy                         0.9998     56745\n   macro avg     0.9998    0.9998    0.9998     56745\nweighted avg     0.9998    0.9998    0.9998     56745\n",
+  "confusion_matrix": [
+    [
+      28371,
+      2
+    ],
+    [
+      8,
+      28364
+    ]
+  ],
+  "top_features": [
+    [
+      "Fwd Packet Length Mean",
+      0.11804739345353947
+    ],
+    [
+      "Fwd Packet Length Max",
+      0.1158071127245064
+    ],
+    [
+      "Avg Fwd Segment Size",
+      0.0742734819743464
+    ],
+    [
+      "Total Length of Fwd Packets",
+      0.04861140646391154
+    ],
+    [
+      "Subflow Fwd Bytes",
+      0.04585080697773615
+    ],
+    [
+      "act_data_pkt_fwd",
+      0.044138820035928075
+    ],
+    [
+      "Fwd Header Length.1",
+      0.04260570767114906
+    ],
+    [
+      "Fwd IAT Std",
+      0.03796712030859089
+    ],
+    [
+      "Bwd Packet Length Std",
+      0.03448077523327562
+    ],
+    [
+      "Fwd Header Length",
+      0.03219448823333333
+    ]
+  ]
+}

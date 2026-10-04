@@ -1,0 +1,51 @@
+{
+  "model": "1d_cnn",
+  "split": "random",
+  "seed": 42,
+  "tuesday_flows": 445909,
+  "friday_flows": 225745,
+  "combined_binary_counts": [
+    529792,
+    141862
+  ],
+  "feature_count": 77,
+  "train_shape": [
+    226979,
+    77
+  ],
+  "test_shape": [
+    56745,
+    77
+  ],
+  "train_classes": [
+    113489,
+    113490
+  ],
+  "test_classes": [
+    28373,
+    28372
+  ],
+  "epochs_trained": 7,
+  "final_train_loss": 0.02254423126578331,
+  "final_val_loss": 0.05686374753713608,
+  "final_train_acc": 0.9891454577445984,
+  "final_val_acc": 0.9768922328948975,
+  "metrics": {
+    "Accuracy": 0.985196933650542,
+    "Precision": 0.9910816210045662,
+    "Recall": 0.9792048498519668,
+    "F1": 0.98510743918871,
+    "ROC_AUC": 0.9994990700333455
+  },
+  "classification_report": "              precision    recall  f1-score   support\n\n      Benign     0.9795    0.9912    0.9853     28373\n      Attack     0.9911    0.9792    0.9851     28372\n\n    accuracy                         0.9852     56745\n   macro avg     0.9853    0.9852    0.9852     56745\nweighted avg     0.9853    0.9852    0.9852     56745\n",
+  "confusion_matrix": [
+    [
+      28123,
+      250
+    ],
+    [
+      590,
+      27782
+    ]
+  ]
+}

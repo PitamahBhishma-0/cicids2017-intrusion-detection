@@ -1,0 +1,93 @@
+{
+  "model": "random_forest",
+  "split": "day",
+  "seed": 42,
+  "n_estimators": 100,
+  "tuesday_flows": 445909,
+  "friday_flows": 225745,
+  "tuesday_binary_counts": [
+    432074,
+    13835
+  ],
+  "friday_binary_counts": [
+    97718,
+    128027
+  ],
+  "feature_count": 77,
+  "train_shape": [
+    27670,
+    77
+  ],
+  "test_shape": [
+    195436,
+    77
+  ],
+  "train_classes": [
+    13835,
+    13835
+  ],
+  "test_classes": [
+    97718,
+    97718
+  ],
+  "metrics": {
+    "Accuracy": 0.49993859882519087,
+    "Precision": 0.0,
+    "Recall": 0.0,
+    "F1": 0.0,
+    "ROC_AUC": 0.944447853863768
+  },
+  "classification_report": "              precision    recall  f1-score   support\n\n      Benign     0.5000    0.9999    0.6666     97718\n      Attack     0.0000    0.0000    0.0000     97718\n\n    accuracy                         0.4999    195436\n   macro avg     0.2500    0.4999    0.3333    195436\nweighted avg     0.2500    0.4999    0.3333    195436\n",
+  "confusion_matrix": [
+    [
+      97706,
+      12
+    ],
+    [
+      97718,
+      0
+    ]
+  ],
+  "top_features": [
+    [
+      "Init_Win_bytes_forward",
+      0.09391748998390449
+    ],
+    [
+      "min_seg_size_forward",
+      0.0918447545062198
+    ],
+    [
+      "Init_Win_bytes_backward",
+      0.06989004871447119
+    ],
+    [
+      "Packet Length Mean",
+      0.05721237672903658
+    ],
+    [
+      "Max Packet Length",
+      0.033119956892155925
+    ],
+    [
+      "Average Packet Size",
+      0.032957502434753434
+    ],
+    [
+      "Packet Length Std",
+      0.030612791595255123
+    ],
+    [
+      "Bwd Header Length",
+      0.030385448031989896
+    ],
+    [
+      "Fwd Packet Length Min",
+      0.030337908951552525
+    ],
+    [
+      "Bwd Packet Length Mean",
+      0.028446097659594688
+    ]
+  ]
+}

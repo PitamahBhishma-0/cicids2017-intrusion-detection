@@ -1,0 +1,11 @@
+# Environments and caches
+.venv/
+__pycache__/
+*.pyc
+
+# CIC-IDS2017 is downloaded on demand and is not redistributed here
+data/
+
+# Trained models and scalers (pickle-based) are recreated by running the scripts, so not committed
+*.keras
+*.joblib
